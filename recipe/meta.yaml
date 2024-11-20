@@ -1,13 +1,13 @@
 {% set name = "sphinx-wagtail-theme" %}
-{% set version = "6.3.0" %}
+{% set version = "6.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx_wagtail_theme-{{ version }}.tar.gz
-  sha256: 5038219fa32a78f0da35425c5fa058db4fd87336682318a6b9684495887bccfb
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sphinx_wagtail_theme-{{ version }}.tar.gz
+  sha256: 1230607a271f99d99c28c1997a67614b8eca492d2340c4fa877f241fb5b2ac7d
 
 build:
   noarch: python
@@ -18,7 +18,9 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
   run:
+    - sphinx-copybutton
     - python >=3.8
 
 test:
