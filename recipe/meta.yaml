@@ -1,5 +1,5 @@
 {% set name = "sphinx-wagtail-theme" %}
-{% set version = "6.5.0" %}
+{% set version = "6.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sphinx_wagtail_theme-{{ version }}.tar.gz
-  sha256: d3d57240d5fab5628de3ea79605e361e0822f601c0e42300620cce43eeeccbbe
+  sha256: 86d48b1939b874c54e261f091af813ff335698b96b5507159fead14390ade741
 
 build:
   noarch: python
